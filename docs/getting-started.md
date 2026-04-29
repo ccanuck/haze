@@ -6,7 +6,7 @@
 - macOS or Windows
 - Discord bot token
 
-## Add ProjectSwift as a dependency
+## Add Haze as a dependency
 
 Use one of these:
 
@@ -19,15 +19,15 @@ Use one of these:
 - Git dependency after publishing:
 
 ```swift
-.package(url: "https://github.com/your-org/ProjectSwift.git", from: "0.1.0")
+.package(url: "https://github.com/ccanuck/haze/.git", from: "0.1.0")
 ```
 
 Add products to your executable target:
 
 ```swift
-.product(name: "Core", package: "ProjectSwift"),
-.product(name: "Commands", package: "ProjectSwift"),
-.product(name: "Builders", package: "ProjectSwift")
+.product(name: "Core", package: "Haze"),
+.product(name: "Commands", package: "Haze"),
+.product(name: "Builders", package: "Haze")
 ```
 
 ## Minimal bot
