@@ -1,6 +1,12 @@
-# ProjectSwift
-
-ProjectSwift is a modular Discord framework for Swift with async/await-first APIs.
+# Haze
+<p align="center">
+  <img src="https://img.shields.io/badge/Swift-FA7343?logo=swift&logoColor=white">
+  <img src="https://img.shields.io/badge/License-Apache_2.0-blue">
+  <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Linux-blue">
+  <img src="https://img.shields.io/badge/Windows-Supported-0078D6?logo=windows&logoColor=white">
+  <img src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white">
+</p>
+Haze is a modular Discord framework for Swift with async/await-first APIs.
 
 ## Documentation
 
