@@ -1,4 +1,4 @@
-# Haze <img src="https://img.shields.io/github/v/release/ccanuck/haze?label=Version&color=blue">
+# Haze <img src="https://img.shields.io/github/v0.1.0-pre/release/ccanuck/haze?label=Version&color=blue">
 <p align="center">
   <img src="https://img.shields.io/badge/Swift-FA7343?logo=swift&logoColor=white">
   <img src="https://img.shields.io/badge/License-Apache_2.0-blue">
