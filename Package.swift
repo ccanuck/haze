@@ -3,6 +3,10 @@ import PackageDescription
 
 let package = Package(
     name: "ProjectSwift",
+    platforms: [
+        .macOS(.v13),
+        .iOS(.v16)
+    ],
     products: [
         .library(name: "Core", targets: ["Core"]),
         .library(name: "Gateway", targets: ["Gateway"]),
@@ -20,6 +24,11 @@ let package = Package(
         .library(name: "Metrics", targets: ["Metrics"]),
         .library(name: "Database", targets: ["Database"])
     ],
+
+    dependencies: [
+        .package(url: "https://github.com/ccanuck/haze", exact: "0.1.0-pre")
+    ],
+
     targets: [
         .target(
             name: "Utilities",
@@ -99,13 +108,24 @@ let package = Package(
                 "Cache",
                 "Plugins",
                 "Metrics",
-                "Database"
+                "Database",
+                .product(name: "Haze", package: "haze")
             ],
             path: "Packages/Core/Sources/Core"
         ),
         .target(
             name: "DiscordJSCompat",
-            dependencies: ["Core", "REST", "Gateway", "Commands", "Interactions", "Builders", "Models", "Logging", "Utilities"],
+            dependencies: [
+                "Core",
+                "REST",
+                "Gateway",
+                "Commands",
+                "Interactions",
+                "Builders",
+                "Models",
+                "Logging",
+                "Utilities"
+            ],
             path: "Packages/DiscordJSCompat/Sources/DiscordJSCompat"
         ),
         .testTarget(
