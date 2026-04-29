@@ -19,7 +19,7 @@ Use one of these:
 - Git dependency after publishing:
 
 ```swift
-.package(url: "https://github.com/ccanuck/haze/.git", from: "0.1.0")
+.package(url: "https://github.com/ccanuck/haze", from: "0.1.0")
 ```
 
 Add products to your executable target:
